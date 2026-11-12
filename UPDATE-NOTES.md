@@ -1,0 +1,1 @@
+Hexadecimal teaching update: expanded explanation, worked examples (1E, FF, 2A), real-world examples and an interactive hexadecimal-to-byte converter in Information & Number Systems. Existing modules and files retained. No GitHub changes.
