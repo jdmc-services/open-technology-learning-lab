@@ -1,0 +1,1084 @@
+{
+  "modules": [
+    {
+      "title": "Computing Systems",
+      "lessons": [
+        {
+          "title": "The information-processing cycle",
+          "explanation": "Input captures data; processing transforms it; output communicates results; storage preserves information.",
+          "example": "A transit kiosk reads a destination, calculates a fare, displays the cost, and records the sale.",
+          "distinction": "Explain where input ends and processing begins."
+        },
+        {
+          "title": "Inside the system unit",
+          "explanation": "The motherboard connects components. The CPU executes instructions. RAM holds active work. A bus transports signals between components.",
+          "example": "Opening a photo involves loading data into memory while processors perform editing operations.",
+          "distinction": "A keyboard is a peripheral, not a component housed inside the desktop chassis."
+        },
+        {
+          "title": "Memory and persistence",
+          "explanation": "RAM is volatile working memory. Firmware is stored in nonvolatile memory. SSDs and HDDs retain saved files when power is removed.",
+          "example": "An unsaved draft can disappear during a power failure, while its last saved version remains on disk.",
+          "distinction": "ROM and firmware are related but not identical; modern firmware can often be updated."
+        },
+        {
+          "title": "CPU, GPU, and performance",
+          "explanation": "A CPU handles general-purpose instructions; a GPU specializes in highly parallel workloads. Performance also depends on RAM, storage, and software.",
+          "example": "A laptop may be limited by insufficient memory even when its processor is fast.",
+          "distinction": "Clock speed alone does not determine overall performance."
+        },
+        {
+          "title": "Storage strategy",
+          "explanation": "An HDD uses rotating magnetic media; an SSD uses solid-state memory. Capacity, latency, resilience, and backup needs influence selection.",
+          "example": "A media editor may use a fast SSD for active projects and separate backups for protection.",
+          "distinction": "A second copy on the same device is not a reliable independent backup."
+        }
+      ],
+      "id": "module-1"
+    },
+    {
+      "title": "Devices and Connections",
+      "lessons": [
+        {
+          "title": "Input, output, and combined devices",
+          "explanation": "Keyboards and scanners provide input; monitors and speakers provide output. Touchscreens perform both functions.",
+          "example": "A museum kiosk shows exhibits and accepts visitor selections on one display.",
+          "distinction": "Classify by information flow, not physical location."
+        },
+        {
+          "title": "Displays and resolution",
+          "explanation": "Display size is usually diagonal. Resolution counts pixels; pixel density and scaling influence sharpness.",
+          "example": "Two monitors can have the same diagonal size but different pixel counts.",
+          "distinction": "Screen size and resolution measure different properties."
+        },
+        {
+          "title": "USB and Thunderbolt",
+          "explanation": "USB supports peripherals and power. USB-C describes connector shape; capabilities vary. Thunderbolt supports high-speed data and display functions.",
+          "example": "A docking station may connect displays, storage, and a keyboard through one supported port.",
+          "distinction": "A USB-C-shaped port does not guarantee Thunderbolt features."
+        },
+        {
+          "title": "Network and telephone connectors",
+          "explanation": "Twisted-pair Ethernet commonly uses 8P8C modular plugs (often called RJ45). RJ11-style connectors are used for telephone wiring.",
+          "example": "An office switch connects to desktops over structured copper cabling.",
+          "distinction": "Connector appearance does not establish a device's network role."
+        },
+        {
+          "title": "Choosing an interface",
+          "explanation": "HDMI commonly carries digital audio/video; DisplayPort carries digital display signals; Bluetooth connects many short-range accessories.",
+          "example": "A presentation room may use HDMI for the projector and Bluetooth for a wireless pointer.",
+          "distinction": "Select by device compatibility, bandwidth, distance, and reliability."
+        }
+      ],
+      "id": "module-2"
+    },
+    {
+      "title": "Digital Data and Logic",
+      "lessons": [
+        {
+          "title": "Bits, bytes, and data sizes",
+          "explanation": "A bit is one binary digit; eight bits form a byte. Decimal kB, MB, GB, and TB scale by 1,000; KiB, MiB, GiB, and TiB scale by 1,024.",
+          "example": "A 4 GB file is roughly four billion bytes under decimal labeling.",
+          "distinction": "Lowercase b indicates bits; uppercase B indicates bytes."
+        },
+        {
+          "title": "Binary place values",
+          "explanation": "Each position represents a power of two. For example, 00110100₂ = 32 + 16 + 4 = 52₁₀.",
+          "example": "Network masks and digital logic use binary representations.",
+          "distinction": "Leading zeroes do not change the number's value."
+        },
+        {
+          "title": "Hexadecimal notation",
+          "explanation": "Hexadecimal uses digits 0–9 and A–F. One hexadecimal digit represents four bits; 3F₁₆ = 63₁₀.",
+          "example": "Hex appears in color specifications and hardware identifiers.",
+          "distinction": "The letter F has numeric value 15 in hexadecimal."
+        },
+        {
+          "title": "Character encoding",
+          "explanation": "Character encodings map symbols to numeric representations. Unicode defines characters across many writing systems; UTF-8 is a common encoding.",
+          "example": "A multilingual website can store English, Arabic, and Japanese text in UTF-8.",
+          "distinction": "HTML structures a page; it is not a character encoding."
+        },
+        {
+          "title": "Data types and calculations",
+          "explanation": "Numbers stored as text generally require conversion before numeric arithmetic. Types help programs validate and process values.",
+          "example": "A spreadsheet may treat an imported price as text until converted to a number.",
+          "distinction": "The string '12' and numeric 12 can look identical but behave differently."
+        },
+        {
+          "title": "Boolean logic",
+          "explanation": "AND requires both conditions; OR requires at least one; NOT reverses a truth value. Truth tables describe all input combinations.",
+          "example": "A building access rule might require an authorized badge AND an active schedule.",
+          "distinction": "Inclusive OR is true when either or both conditions are true."
+        }
+      ],
+      "id": "module-3"
+    },
+    {
+      "title": "Software and Operating Systems",
+      "lessons": [
+        {
+          "title": "System versus application software",
+          "explanation": "Operating systems manage hardware and processes. Applications support user tasks; utilities provide maintenance and diagnostics.",
+          "example": "A spreadsheet application runs on an operating system and uses system-managed storage.",
+          "distinction": "A device driver is not the same as a spreadsheet application."
+        },
+        {
+          "title": "Drivers, firmware, and utilities",
+          "explanation": "Drivers enable OS-to-device communication. Firmware controls device-level functions. Utilities inspect, configure, or maintain systems.",
+          "example": "A printer may need an OS driver while its own firmware manages internal operations.",
+          "distinction": "Firmware updates require vendor guidance and change control."
+        },
+        {
+          "title": "Desktop and mobile operating systems",
+          "explanation": "Windows, macOS, Linux, Android, iOS, and ChromeOS serve different device ecosystems. Their architecture and storage behavior vary.",
+          "example": "A managed Chromebook may rely heavily on cloud services while still supporting local storage.",
+          "distinction": "Do not assume any operating system is universally stateless."
+        },
+        {
+          "title": "Virtual machines and hypervisors",
+          "explanation": "A hypervisor creates and manages virtual machines. Type 1 runs directly on hardware; Type 2 runs within a host operating system.",
+          "example": "A student can run a Linux virtual machine on a Windows laptop using a hosted hypervisor.",
+          "distinction": "A virtual machine is distinct from an application container."
+        },
+        {
+          "title": "Software licensing and app safety",
+          "explanation": "Licenses define permitted use. Trusted distribution, permissions, updates, and reputation checks reduce software risk.",
+          "example": "A team evaluates an app's permissions and support policy before deployment.",
+          "distinction": "App-store review lowers risk but cannot guarantee an app is harmless."
+        },
+        {
+          "title": "Spreadsheet modeling",
+          "explanation": "Formulas calculate values; functions perform predefined operations; what-if analysis varies assumptions to inspect outcomes.",
+          "example": "Changing the expected number of customers shows how projected revenue responds.",
+          "distinction": "A scenario model is only as reliable as its assumptions."
+        }
+      ],
+      "id": "module-4"
+    },
+    {
+      "title": "Networks and Connectivity",
+      "lessons": [
+        {
+          "title": "Network roles",
+          "explanation": "A switch links devices within a LAN; a router connects networks; an access point supplies wireless LAN access; a NIC provides an interface.",
+          "example": "A small office uses a switch for desktops and a router to reach its ISP.",
+          "distinction": "A switch and a router perform different forwarding functions."
+        },
+        {
+          "title": "Addresses and naming",
+          "explanation": "IPv4 addresses are 32 bits; IPv6 addresses are 128 bits. MAC addresses identify link-layer interfaces; DNS resolves names.",
+          "example": "A browser resolves a domain name before connecting to a remote server.",
+          "distinction": "An IP address and a MAC address are not interchangeable."
+        },
+        {
+          "title": "Packet-based communication",
+          "explanation": "Networks divide data into packets. Routing decisions may direct packets through different paths according to topology and policy.",
+          "example": "A video meeting exchanges many packets rather than one continuous physical stream.",
+          "distinction": "Packets do not necessarily take the same path."
+        },
+        {
+          "title": "Bandwidth, throughput, and latency",
+          "explanation": "Bandwidth is capacity; throughput is achieved delivery rate; latency is delay; jitter is variation in delay.",
+          "example": "A call can sound poor from high jitter even when the connection has ample bandwidth.",
+          "distinction": "A higher-speed subscription does not automatically fix latency."
+        },
+        {
+          "title": "Wired and wireless links",
+          "explanation": "Ethernet provides wired LAN connectivity; Wi-Fi provides wireless LAN connectivity; Bluetooth commonly supports personal-area links.",
+          "example": "A café uses Wi-Fi for customers and Ethernet for fixed payment terminals.",
+          "distinction": "Wireless access and Internet service are different things."
+        },
+        {
+          "title": "Cable diagnostics",
+          "explanation": "A cable tester checks wiring characteristics; a toner and probe helps locate cable runs; crimpers and punch-down tools terminate cables.",
+          "example": "A technician traces an unlabeled wall jack before testing the cable's pairs.",
+          "distinction": "Tracing a cable is not the same as validating its performance."
+        }
+      ],
+      "id": "module-5"
+    },
+    {
+      "title": "Web and Cloud Technology",
+      "lessons": [
+        {
+          "title": "Internet versus World Wide Web",
+          "explanation": "The Internet is the underlying network of networks. The Web is one service built on it using web technologies.",
+          "example": "Email and voice calls use Internet connectivity without being web pages.",
+          "distinction": "A browser accesses web content; it is not the Internet itself."
+        },
+        {
+          "title": "HTML, CSS, and JavaScript",
+          "explanation": "HTML structures content; CSS styles presentation; JavaScript adds behavior and interactivity.",
+          "example": "An event-registration page uses HTML fields, CSS layout, and JavaScript validation.",
+          "distinction": "Each technology serves a different layer of the user experience."
+        },
+        {
+          "title": "Browsers and web evaluation",
+          "explanation": "Browsers retrieve and render resources. Search results require evaluation for authority, accuracy, recency, and purpose.",
+          "example": "Students compare a vendor manual with an anonymous forum post before following configuration advice.",
+          "distinction": "Search ranking is not a guarantee of factual accuracy."
+        },
+        {
+          "title": "Uploading, downloading, and collaboration",
+          "explanation": "Uploading sends data from a local device to a remote service; downloading retrieves remote data. Wikis support collaborative editing.",
+          "example": "A student uploads a draft to a shared workspace and downloads feedback later.",
+          "distinction": "The direction of data transfer matters."
+        },
+        {
+          "title": "Cloud service models",
+          "explanation": "IaaS supplies infrastructure resources; PaaS supplies a managed application platform; SaaS delivers ready-to-use applications.",
+          "example": "A team rents virtual machines under IaaS but uses hosted email under SaaS.",
+          "distinction": "The customer's management responsibility changes by model."
+        },
+        {
+          "title": "Cloud responsibility and resilience",
+          "explanation": "Cloud providers and customers share security responsibilities. Backups, access controls, versioning, and recovery testing remain important.",
+          "example": "A team enables version history and tests file recovery after accidental deletion.",
+          "distinction": "Cloud synchronization alone is not a complete backup strategy."
+        }
+      ],
+      "id": "module-6"
+    },
+    {
+      "title": "Databases and Information",
+      "lessons": [
+        {
+          "title": "Tables, records, and fields",
+          "explanation": "Relational tables organize rows (records) and columns (fields). Data types and constraints support consistent information.",
+          "example": "A library database stores books and borrowers in separate related tables.",
+          "distinction": "A database can enforce rules beyond a simple flat file."
+        },
+        {
+          "title": "Primary and foreign keys",
+          "explanation": "A primary key uniquely identifies a row; a foreign key references a key in another table and can enforce relationships.",
+          "example": "An Orders table references a Customers table using a customer identifier.",
+          "distinction": "A foreign key does not have to be unique."
+        },
+        {
+          "title": "SQL operations",
+          "explanation": "SELECT retrieves rows; INSERT adds rows; UPDATE changes existing rows; DELETE removes rows.",
+          "example": "A report queries current inventory without modifying stock records.",
+          "distinction": "Read-only queries should not alter the underlying data."
+        },
+        {
+          "title": "Data quality and integrity",
+          "explanation": "Validation rules, types, constraints, and controlled updates reduce inconsistency. Backups address loss, not every quality problem.",
+          "example": "A registration system rejects an invalid date format before saving it.",
+          "distinction": "A valid database can still contain inaccurate real-world facts."
+        }
+      ],
+      "id": "module-7"
+    },
+    {
+      "title": "Cybersecurity and Privacy",
+      "lessons": [
+        {
+          "title": "Social engineering",
+          "explanation": "Attackers may manipulate trust, urgency, or authority to obtain information or actions. Verification and reporting are essential.",
+          "example": "A caller claims to be IT support and requests a one-time sign-in code.",
+          "distinction": "Technical filters help but cannot replace informed decisions."
+        },
+        {
+          "title": "Authentication and passwords",
+          "explanation": "Use unique, long passwords or passphrases; password managers reduce reuse. Multifactor authentication adds another proof of identity.",
+          "example": "A compromised shopping-site password should not unlock a student's email account.",
+          "distinction": "Length, uniqueness, and MFA matter more than arbitrary complexity alone."
+        },
+        {
+          "title": "Encryption, VPNs, and private browsing",
+          "explanation": "Encryption protects data confidentiality in transit or at rest. VPNs secure traffic to a VPN endpoint; private browsing mainly limits local history retention.",
+          "example": "On public Wi-Fi, HTTPS remains important even when a VPN is in use.",
+          "distinction": "Neither private browsing nor a VPN makes a user anonymous or immune to phishing."
+        },
+        {
+          "title": "Wireless security",
+          "explanation": "WPA2 and WPA3 provide Wi-Fi security mechanisms; open networks may lack link-layer encryption. Device and site security still matter.",
+          "example": "A campus guest network may be open while individual websites use HTTPS.",
+          "distinction": "An encrypted website does not imply the Wi-Fi link itself is encrypted."
+        },
+        {
+          "title": "Geofencing and asset protection",
+          "explanation": "Geofencing defines virtual geographic boundaries to trigger location-based rules or alerts. It differs from encryption and malware scanning.",
+          "example": "A fleet system alerts staff when a tracked delivery device leaves an approved area.",
+          "distinction": "Location-based controls need privacy safeguards and authorized use."
+        }
+      ],
+      "id": "module-8"
+    },
+    {
+      "title": "Backup and Troubleshooting",
+      "lessons": [
+        {
+          "title": "Backup versus synchronization",
+          "explanation": "Backups preserve recoverable copies. Synchronization mirrors changes and can propagate accidental deletion or corruption.",
+          "example": "A deleted file may vanish from synced folders but remain in a versioned backup.",
+          "distinction": "Recovery requires knowing where protected copies are stored."
+        },
+        {
+          "title": "Testing restoration",
+          "explanation": "A successful backup job does not prove recoverability. Restore a representative file and verify it opens correctly.",
+          "example": "A department performs periodic restore drills to validate recovery procedures.",
+          "distinction": "The ability to restore is the operational goal."
+        },
+        {
+          "title": "Structured troubleshooting",
+          "explanation": "Identify the problem, establish a theory, test it, plan a fix, implement safely, verify function, and document outcomes.",
+          "example": "A technician checks power and cabling before replacing a working printer.",
+          "distinction": "Record the observed symptom and evidence, not just the proposed fix."
+        },
+        {
+          "title": "Change risk and verification",
+          "explanation": "Consider impact and rollback before changing settings. Verify the original issue is resolved with the affected user.",
+          "example": "Before updating a shared workstation, preserve important data and plan recovery.",
+          "distinction": "A technical change is not complete until service is verified."
+        },
+        {
+          "title": "Interpreting network tests",
+          "explanation": "Ping measures ICMP response timing when permitted; packet loss and jitter require broader observation. DNS and application checks add context.",
+          "example": "A laptop can reach an IP address but not a hostname, pointing toward name resolution.",
+          "distinction": "No ping response alone does not prove a host is offline."
+        }
+      ],
+      "id": "module-9"
+    },
+    {
+      "title": "Emerging Technology and Responsible Use",
+      "lessons": [
+        {
+          "title": "Virtual and augmented reality",
+          "explanation": "VR immerses users in simulated environments; AR overlays digital content on physical surroundings.",
+          "example": "A safety trainee practices procedures in VR while a technician views AR instructions.",
+          "distinction": "Immersion and overlay are different interaction models."
+        },
+        {
+          "title": "Artificial intelligence and automation",
+          "explanation": "AI systems can classify, predict, generate, or recommend; automation executes workflows. Human oversight and validation remain important.",
+          "example": "A help desk drafts knowledge-base summaries using AI, then reviews them before publication.",
+          "distinction": "Generated content can be inaccurate even when confidently stated."
+        },
+        {
+          "title": "Responsible technology choices",
+          "explanation": "Evaluate accessibility, privacy, security, costs, and real-world benefit before adopting technology.",
+          "example": "A school pilots an AI assistant using synthetic data and checks whether it improves learning outcomes.",
+          "distinction": "A tool's novelty is not evidence of educational value."
+        },
+        {
+          "title": "A 14-day mastery routine",
+          "explanation": "Days 1–5: review systems, devices, data, software, and networking. Days 6–10: review web/cloud, databases, security, troubleshooting, and emerging technology. Days 11–12: complete original practice scenarios and revisit weak areas. Days 13–14: explain concepts from memory and do a light final review.",
+          "example": "Spend 20–30 focused minutes daily. Track topics you cannot explain confidently.",
+          "distinction": "Use spaced practice and retrieval rather than rereading slides repeatedly."
+        },
+        {
+          "title": "Your self-check before the assessment",
+          "explanation": "Can you explain CPU versus RAM, storage versus backup, router versus switch, Internet versus Web, IaaS versus SaaS, and encryption versus private browsing? Can you diagnose a simple connectivity issue and explain how databases maintain relationships?",
+          "example": "Create one original example for each module and describe the correct technology choice.",
+          "distinction": "Confidence comes from explaining and applying concepts in unfamiliar situations."
+        }
+      ],
+      "id": "module-10"
+    }
+  ],
+  "questions": [
+    {
+      "id": "tf-1-1",
+      "module": 0,
+      "question": "A ticket kiosk accepts a destination, computes a fare, and prints a receipt. Which stage calculates the fare?",
+      "options": [
+        "Input",
+        "Processing",
+        "Output",
+        "Storage"
+      ],
+      "answer": 1,
+      "explanation": "Input captures data; processing transforms it; output communicates results; storage preserves information.",
+      "distinction": "Explain where input ends and processing begins."
+    },
+    {
+      "id": "tf-1-2",
+      "module": 0,
+      "question": "A student edits a large photograph. Which component typically holds the image data while the editor is working?",
+      "options": [
+        "RAM",
+        "Optical disc",
+        "Printer buffer only",
+        "Power supply"
+      ],
+      "answer": 0,
+      "explanation": "The motherboard connects components. The CPU executes instructions. RAM holds active work. A bus transports signals between components.",
+      "distinction": "A keyboard is a peripheral, not a component housed inside the desktop chassis."
+    },
+    {
+      "id": "tf-1-3",
+      "module": 0,
+      "question": "A laptop shuts down before a document is saved. Which design change best reduces lost work?",
+      "options": [
+        "Use automatic saving to persistent storage",
+        "Increase speaker volume",
+        "Disable file extensions",
+        "Change the wallpaper"
+      ],
+      "answer": 0,
+      "explanation": "RAM is volatile working memory. Firmware is stored in nonvolatile memory. SSDs and HDDs retain saved files when power is removed.",
+      "distinction": "ROM and firmware are related but not identical; modern firmware can often be updated."
+    },
+    {
+      "id": "tf-1-4",
+      "module": 0,
+      "question": "A design team needs to accelerate many parallel graphics calculations. Which component is particularly suited to that work?",
+      "options": [
+        "Network switch",
+        "GPU",
+        "Power adapter",
+        "Keyboard controller"
+      ],
+      "answer": 1,
+      "explanation": "A CPU handles general-purpose instructions; a GPU specializes in highly parallel workloads. Performance also depends on RAM, storage, and software.",
+      "distinction": "Clock speed alone does not determine overall performance."
+    },
+    {
+      "id": "tf-1-5",
+      "module": 0,
+      "question": "An editor needs fast access to active video projects plus recovery after accidental deletion. Which combination best addresses both needs?",
+      "options": [
+        "Fast SSD and independent versioned backups",
+        "Only a larger monitor",
+        "One shared flash drive with no copies",
+        "More RAM without backups"
+      ],
+      "answer": 0,
+      "explanation": "An HDD uses rotating magnetic media; an SSD uses solid-state memory. Capacity, latency, resilience, and backup needs influence selection.",
+      "distinction": "A second copy on the same device is not a reliable independent backup."
+    },
+    {
+      "id": "tf-2-1",
+      "module": 1,
+      "question": "A public information kiosk displays a menu and accepts taps. How should its screen be classified?",
+      "options": [
+        "Input only",
+        "Output only",
+        "Both input and output",
+        "Storage"
+      ],
+      "answer": 2,
+      "explanation": "Keyboards and scanners provide input; monitors and speakers provide output. Touchscreens perform both functions.",
+      "distinction": "Classify by information flow, not physical location."
+    },
+    {
+      "id": "tf-2-2",
+      "module": 1,
+      "question": "Two displays are both 27 inches, but one shows noticeably finer text. Which specification most directly helps explain this?",
+      "options": [
+        "Pixel resolution",
+        "Power cord length",
+        "Number of USB ports",
+        "Audio jack size"
+      ],
+      "answer": 0,
+      "explanation": "Display size is usually diagonal. Resolution counts pixels; pixel density and scaling influence sharpness.",
+      "distinction": "Screen size and resolution measure different properties."
+    },
+    {
+      "id": "tf-2-3",
+      "module": 1,
+      "question": "A laptop has a USB-C-shaped port. What should be checked before purchasing a high-speed display dock?",
+      "options": [
+        "Supported port protocols and display capabilities",
+        "The laptop wallpaper",
+        "The number of browser bookmarks",
+        "Keyboard language"
+      ],
+      "answer": 0,
+      "explanation": "USB supports peripherals and power. USB-C describes connector shape; capabilities vary. Thunderbolt supports high-speed data and display functions.",
+      "distinction": "A USB-C-shaped port does not guarantee Thunderbolt features."
+    },
+    {
+      "id": "tf-2-4",
+      "module": 1,
+      "question": "A technician connects a desktop to a wired office LAN. Which cable endpoint is normally used for twisted-pair Ethernet?",
+      "options": [
+        "8P8C modular Ethernet plug",
+        "3.5 mm audio plug",
+        "HDMI plug",
+        "AC mains plug"
+      ],
+      "answer": 0,
+      "explanation": "Twisted-pair Ethernet commonly uses 8P8C modular plugs (often called RJ45). RJ11-style connectors are used for telephone wiring.",
+      "distinction": "Connector appearance does not establish a device's network role."
+    },
+    {
+      "id": "tf-2-5",
+      "module": 1,
+      "question": "A meeting-room display needs a digital video signal from a laptop. Which interface is commonly appropriate?",
+      "options": [
+        "HDMI",
+        "RJ11 telephone jack",
+        "Microphone XLR input",
+        "AC outlet"
+      ],
+      "answer": 0,
+      "explanation": "HDMI commonly carries digital audio/video; DisplayPort carries digital display signals; Bluetooth connects many short-range accessories.",
+      "distinction": "Select by device compatibility, bandwidth, distance, and reliability."
+    },
+    {
+      "id": "tf-3-1",
+      "module": 2,
+      "question": "A backup service advertises 2 TB of capacity. Which quantity is closest under decimal storage units?",
+      "options": [
+        "Two trillion bytes",
+        "Two million bits",
+        "Two thousand bytes",
+        "Two billion bits"
+      ],
+      "answer": 0,
+      "explanation": "A bit is one binary digit; eight bits form a byte. Decimal kB, MB, GB, and TB scale by 1,000; KiB, MiB, GiB, and TiB scale by 1,024.",
+      "distinction": "Lowercase b indicates bits; uppercase B indicates bytes."
+    },
+    {
+      "id": "tf-3-2",
+      "module": 2,
+      "question": "A controller records the binary value 01010110. What decimal value does it represent?",
+      "options": [
+        "84",
+        "86",
+        "88",
+        "90"
+      ],
+      "answer": 1,
+      "explanation": "Each position represents a power of two. For example, 00110100₂ = 32 + 16 + 4 = 52₁₀.",
+      "distinction": "Leading zeroes do not change the number's value."
+    },
+    {
+      "id": "tf-3-3",
+      "module": 2,
+      "question": "A color component has hexadecimal value 7F. What is its decimal value?",
+      "options": [
+        "112",
+        "126",
+        "127",
+        "128"
+      ],
+      "answer": 2,
+      "explanation": "Hexadecimal uses digits 0–9 and A–F. One hexadecimal digit represents four bits; 3F₁₆ = 63₁₀.",
+      "distinction": "The letter F has numeric value 15 in hexadecimal."
+    },
+    {
+      "id": "tf-3-4",
+      "module": 2,
+      "question": "A school website must correctly store names written in several scripts. Which encoding approach is broadly appropriate?",
+      "options": [
+        "UTF-8",
+        "A seven-segment display",
+        "A proprietary keyboard layout only",
+        "Binary-coded decimal for every character"
+      ],
+      "answer": 0,
+      "explanation": "Character encodings map symbols to numeric representations. Unicode defines characters across many writing systems; UTF-8 is a common encoding.",
+      "distinction": "HTML structures a page; it is not a character encoding."
+    },
+    {
+      "id": "tf-3-5",
+      "module": 2,
+      "question": "A CSV import stores the price '25' as text. What must a calculation routine usually do before adding tax numerically?",
+      "options": [
+        "Convert the text to a numeric value",
+        "Change the font",
+        "Move the file to another folder",
+        "Rename the worksheet"
+      ],
+      "answer": 0,
+      "explanation": "Numbers stored as text generally require conversion before numeric arithmetic. Types help programs validate and process values.",
+      "distinction": "The string '12' and numeric 12 can look identical but behave differently."
+    },
+    {
+      "id": "tf-4-1",
+      "module": 3,
+      "question": "An employee writes a budget using a spreadsheet. What category best describes the spreadsheet program?",
+      "options": [
+        "Application software",
+        "Firmware",
+        "Device driver",
+        "Boot loader"
+      ],
+      "answer": 0,
+      "explanation": "Operating systems manage hardware and processes. Applications support user tasks; utilities provide maintenance and diagnostics.",
+      "distinction": "A device driver is not the same as a spreadsheet application."
+    },
+    {
+      "id": "tf-4-2",
+      "module": 3,
+      "question": "A new label printer works after installing vendor-provided software that connects it to the OS. What was installed?",
+      "options": [
+        "Device driver",
+        "Web cookie",
+        "Hypervisor",
+        "Network firewall"
+      ],
+      "answer": 0,
+      "explanation": "Drivers enable OS-to-device communication. Firmware controls device-level functions. Utilities inspect, configure, or maintain systems.",
+      "distinction": "Firmware updates require vendor guidance and change control."
+    },
+    {
+      "id": "tf-4-3",
+      "module": 3,
+      "question": "A managed Chromebook saves files locally for offline use. Which statement is most accurate?",
+      "options": [
+        "Local storage can coexist with cloud-oriented management",
+        "All ChromeOS devices have no local storage",
+        "ChromeOS is an Android skin",
+        "Offline operation is impossible"
+      ],
+      "answer": 0,
+      "explanation": "Windows, macOS, Linux, Android, iOS, and ChromeOS serve different device ecosystems. Their architecture and storage behavior vary.",
+      "distinction": "Do not assume any operating system is universally stateless."
+    },
+    {
+      "id": "tf-4-4",
+      "module": 3,
+      "question": "A student runs a second operating system inside an app on their laptop. What is the virtualization arrangement?",
+      "options": [
+        "Hosted (Type 2) hypervisor",
+        "Bare-metal (Type 1) hypervisor only",
+        "Firmware replacement",
+        "A network router"
+      ],
+      "answer": 0,
+      "explanation": "A hypervisor creates and manages virtual machines. Type 1 runs directly on hardware; Type 2 runs within a host operating system.",
+      "distinction": "A virtual machine is distinct from an application container."
+    },
+    {
+      "id": "tf-4-5",
+      "module": 3,
+      "question": "A department evaluates a new mobile app. Which review practice is strongest?",
+      "options": [
+        "Check permissions, updates, reputation, and support",
+        "Assume app-store listing guarantees safety",
+        "Ignore the requested permissions",
+        "Use any abandoned version"
+      ],
+      "answer": 0,
+      "explanation": "Licenses define permitted use. Trusted distribution, permissions, updates, and reputation checks reduce software risk.",
+      "distinction": "App-store review lowers risk but cannot guarantee an app is harmless."
+    },
+    {
+      "id": "tf-5-1",
+      "module": 4,
+      "question": "A coworking space needs to connect twelve wired desktops on one LAN. What device normally provides the ports?",
+      "options": [
+        "Ethernet switch",
+        "Wi-Fi antenna alone",
+        "External SSD",
+        "Cellular SIM"
+      ],
+      "answer": 0,
+      "explanation": "A switch links devices within a LAN; a router connects networks; an access point supplies wireless LAN access; a NIC provides an interface.",
+      "distinction": "A switch and a router perform different forwarding functions."
+    },
+    {
+      "id": "tf-5-2",
+      "module": 4,
+      "question": "A device has an IPv6 address. How many bits make up that address?",
+      "options": [
+        "32",
+        "48",
+        "64",
+        "128"
+      ],
+      "answer": 3,
+      "explanation": "IPv4 addresses are 32 bits; IPv6 addresses are 128 bits. MAC addresses identify link-layer interfaces; DNS resolves names.",
+      "distinction": "An IP address and a MAC address are not interchangeable."
+    },
+    {
+      "id": "tf-5-3",
+      "module": 4,
+      "question": "A cloud app sends a file across several intermediate networks. What mechanism enables forwarding toward the destination?",
+      "options": [
+        "Packet routing",
+        "Screen resolution",
+        "USB enumeration",
+        "Local file indexing"
+      ],
+      "answer": 0,
+      "explanation": "Networks divide data into packets. Routing decisions may direct packets through different paths according to topology and policy.",
+      "distinction": "Packets do not necessarily take the same path."
+    },
+    {
+      "id": "tf-5-4",
+      "module": 4,
+      "question": "A video call has frequent delay spikes even though the download speed is high. Which measurement is especially relevant?",
+      "options": [
+        "Jitter",
+        "Monitor size",
+        "Disk capacity",
+        "Keyboard polling"
+      ],
+      "answer": 0,
+      "explanation": "Bandwidth is capacity; throughput is achieved delivery rate; latency is delay; jitter is variation in delay.",
+      "distinction": "A higher-speed subscription does not automatically fix latency."
+    },
+    {
+      "id": "tf-5-5",
+      "module": 4,
+      "question": "A cashier station uses a cable to reach the local network while customers connect wirelessly. Which pair describes the two access methods?",
+      "options": [
+        "Ethernet and Wi-Fi",
+        "Bluetooth and HDMI",
+        "USB and SATA",
+        "NFC and VGA"
+      ],
+      "answer": 0,
+      "explanation": "Ethernet provides wired LAN connectivity; Wi-Fi provides wireless LAN connectivity; Bluetooth commonly supports personal-area links.",
+      "distinction": "Wireless access and Internet service are different things."
+    },
+    {
+      "id": "tf-6-1",
+      "module": 5,
+      "question": "A mobile app sends messages over the Internet without opening web pages. Which conclusion is correct?",
+      "options": [
+        "Internet services extend beyond the Web",
+        "The Internet and Web are identical",
+        "All messaging requires HTML pages",
+        "The app cannot use IP"
+      ],
+      "answer": 0,
+      "explanation": "The Internet is the underlying network of networks. The Web is one service built on it using web technologies.",
+      "distinction": "A browser accesses web content; it is not the Internet itself."
+    },
+    {
+      "id": "tf-6-2",
+      "module": 5,
+      "question": "A site has correct text and structure but needs new colors and spacing. Which web technology primarily controls that presentation?",
+      "options": [
+        "CSS",
+        "SQL",
+        "DNS",
+        "TCP"
+      ],
+      "answer": 0,
+      "explanation": "HTML structures content; CSS styles presentation; JavaScript adds behavior and interactivity.",
+      "distinction": "Each technology serves a different layer of the user experience."
+    },
+    {
+      "id": "tf-6-3",
+      "module": 5,
+      "question": "Two search results disagree about a software patch. Which approach best supports a sound decision?",
+      "options": [
+        "Compare vendor documentation, dates, and source credibility",
+        "Choose the first result automatically",
+        "Trust the most colorful page",
+        "Ignore publication dates"
+      ],
+      "answer": 0,
+      "explanation": "Browsers retrieve and render resources. Search results require evaluation for authority, accuracy, recency, and purpose.",
+      "distinction": "Search ranking is not a guarantee of factual accuracy."
+    },
+    {
+      "id": "tf-6-4",
+      "module": 5,
+      "question": "A student sends a local video file to a shared online folder. What direction of transfer is this?",
+      "options": [
+        "Upload",
+        "Download",
+        "Local cache eviction",
+        "Screen casting only"
+      ],
+      "answer": 0,
+      "explanation": "Uploading sends data from a local device to a remote service; downloading retrieves remote data. Wikis support collaborative editing.",
+      "distinction": "The direction of data transfer matters."
+    },
+    {
+      "id": "tf-6-5",
+      "module": 5,
+      "question": "A startup wants a managed runtime for deploying its own web code without managing virtual machine operating systems. Which model best fits?",
+      "options": [
+        "PaaS",
+        "IaaS with self-managed servers",
+        "On-premises racks",
+        "Offline archival storage"
+      ],
+      "answer": 0,
+      "explanation": "IaaS supplies infrastructure resources; PaaS supplies a managed application platform; SaaS delivers ready-to-use applications.",
+      "distinction": "The customer's management responsibility changes by model."
+    },
+    {
+      "id": "tf-7-1",
+      "module": 6,
+      "question": "A library system stores books in one table and loans in another. Which structure makes each loan a distinct record?",
+      "options": [
+        "A row with its own identifier",
+        "A font color",
+        "A browser cookie",
+        "A network packet"
+      ],
+      "answer": 0,
+      "explanation": "Relational tables organize rows (records) and columns (fields). Data types and constraints support consistent information.",
+      "distinction": "A database can enforce rules beyond a simple flat file."
+    },
+    {
+      "id": "tf-7-2",
+      "module": 6,
+      "question": "A loan record stores the ID of the book it references. What database mechanism models that relationship?",
+      "options": [
+        "Foreign key",
+        "Display driver",
+        "CPU cache",
+        "IP subnet mask"
+      ],
+      "answer": 0,
+      "explanation": "A primary key uniquely identifies a row; a foreign key references a key in another table and can enforce relationships.",
+      "distinction": "A foreign key does not have to be unique."
+    },
+    {
+      "id": "tf-7-3",
+      "module": 6,
+      "question": "A librarian needs to view all overdue loans without changing records. Which SQL operation is appropriate?",
+      "options": [
+        "SELECT",
+        "DELETE",
+        "DROP",
+        "UPDATE"
+      ],
+      "answer": 0,
+      "explanation": "SELECT retrieves rows; INSERT adds rows; UPDATE changes existing rows; DELETE removes rows.",
+      "distinction": "Read-only queries should not alter the underlying data."
+    },
+    {
+      "id": "tf-7-4",
+      "module": 6,
+      "question": "A form rejects an impossible calendar date before saving. Which database-related practice is illustrated?",
+      "options": [
+        "Validation and integrity constraints",
+        "Network routing",
+        "Display scaling",
+        "File compression only"
+      ],
+      "answer": 0,
+      "explanation": "Validation rules, types, constraints, and controlled updates reduce inconsistency. Backups address loss, not every quality problem.",
+      "distinction": "A valid database can still contain inaccurate real-world facts."
+    },
+    {
+      "id": "tf-7-5",
+      "module": 6,
+      "question": "A school database contains a correctly formatted but outdated phone number. What does this demonstrate?",
+      "options": [
+        "Valid structure does not guarantee factual accuracy",
+        "Data types guarantee all facts",
+        "Backups automatically update contact details",
+        "Primary keys prevent stale information"
+      ],
+      "answer": 0,
+      "explanation": "Validation rules, types, constraints, and controlled updates reduce inconsistency. Backups address loss, not every quality problem.",
+      "distinction": "A valid database can still contain inaccurate real-world facts."
+    },
+    {
+      "id": "tf-8-1",
+      "module": 7,
+      "question": "An email claims to be from campus IT and demands an immediate login code. What is the best first response?",
+      "options": [
+        "Verify through an independently known support channel",
+        "Reply with the code",
+        "Forward the code to classmates",
+        "Disable antivirus"
+      ],
+      "answer": 0,
+      "explanation": "Attackers may manipulate trust, urgency, or authority to obtain information or actions. Verification and reporting are essential.",
+      "distinction": "Technical filters help but cannot replace informed decisions."
+    },
+    {
+      "id": "tf-8-2",
+      "module": 7,
+      "question": "A student has one memorable password used across many services. What improvement most reduces credential reuse risk?",
+      "options": [
+        "Use unique passwords stored in a password manager",
+        "Add a single digit to the shared password",
+        "Share it only with close friends",
+        "Write it on a public board"
+      ],
+      "answer": 0,
+      "explanation": "Use unique, long passwords or passphrases; password managers reduce reuse. Multifactor authentication adds another proof of identity.",
+      "distinction": "Length, uniqueness, and MFA matter more than arbitrary complexity alone."
+    },
+    {
+      "id": "tf-8-3",
+      "module": 7,
+      "question": "A user opens a private browser window on public Wi-Fi. Which protection should they NOT assume?",
+      "options": [
+        "That all network traffic is encrypted by private browsing",
+        "That local history may be reduced",
+        "That some cookies may be cleared on exit",
+        "That a new temporary session is created"
+      ],
+      "answer": 0,
+      "explanation": "Encryption protects data confidentiality in transit or at rest. VPNs secure traffic to a VPN endpoint; private browsing mainly limits local history retention.",
+      "distinction": "Neither private browsing nor a VPN makes a user anonymous or immune to phishing."
+    },
+    {
+      "id": "tf-8-4",
+      "module": 7,
+      "question": "A visitor connects to an open guest Wi-Fi network. Which statement is the safest assumption?",
+      "options": [
+        "The Wi-Fi link may lack encryption; use HTTPS and other safeguards",
+        "Every packet is encrypted by the SSID",
+        "All guest devices are trustworthy",
+        "The router prevents all phishing"
+      ],
+      "answer": 0,
+      "explanation": "WPA2 and WPA3 provide Wi-Fi security mechanisms; open networks may lack link-layer encryption. Device and site security still matter.",
+      "distinction": "An encrypted website does not imply the Wi-Fi link itself is encrypted."
+    },
+    {
+      "id": "tf-8-5",
+      "module": 7,
+      "question": "A delivery company wants an alert when a tracked vehicle crosses a designated area boundary. Which control serves that purpose?",
+      "options": [
+        "Geofencing",
+        "Disk encryption",
+        "Password hashing",
+        "Anti-malware scanning"
+      ],
+      "answer": 0,
+      "explanation": "Geofencing defines virtual geographic boundaries to trigger location-based rules or alerts. It differs from encryption and malware scanning.",
+      "distinction": "Location-based controls need privacy safeguards and authorized use."
+    },
+    {
+      "id": "tf-9-1",
+      "module": 8,
+      "question": "A team mirrors its project folder to another device, including accidental deletions. What additional control addresses this risk?",
+      "options": [
+        "Versioned backup with recoverable history",
+        "Faster synchronization alone",
+        "More browser tabs",
+        "Higher display resolution"
+      ],
+      "answer": 0,
+      "explanation": "Backups preserve recoverable copies. Synchronization mirrors changes and can propagate accidental deletion or corruption.",
+      "distinction": "Recovery requires knowing where protected copies are stored."
+    },
+    {
+      "id": "tf-9-2",
+      "module": 8,
+      "question": "A backup dashboard shows green status for months. What evidence best confirms files can actually be recovered?",
+      "options": [
+        "A successful restore and validation test",
+        "The dashboard color alone",
+        "A copy of the dashboard screenshot",
+        "An unused spare cable"
+      ],
+      "answer": 0,
+      "explanation": "A successful backup job does not prove recoverability. Restore a representative file and verify it opens correctly.",
+      "distinction": "The ability to restore is the operational goal."
+    },
+    {
+      "id": "tf-9-3",
+      "module": 8,
+      "question": "A workstation intermittently disconnects from the network. What should a technician do before changing settings?",
+      "options": [
+        "Document symptoms and determine scope",
+        "Replace every switch",
+        "Reset all user passwords",
+        "Close the incident"
+      ],
+      "answer": 0,
+      "explanation": "Identify the problem, establish a theory, test it, plan a fix, implement safely, verify function, and document outcomes.",
+      "distinction": "Record the observed symptom and evidence, not just the proposed fix."
+    },
+    {
+      "id": "tf-9-4",
+      "module": 8,
+      "question": "A technician plans to modify a shared device configuration. What should be prepared first?",
+      "options": [
+        "Impact assessment and rollback plan",
+        "A new wallpaper",
+        "A different desk location",
+        "A social-media announcement"
+      ],
+      "answer": 0,
+      "explanation": "Consider impact and rollback before changing settings. Verify the original issue is resolved with the affected user.",
+      "distinction": "A technical change is not complete until service is verified."
+    },
+    {
+      "id": "tf-9-5",
+      "module": 8,
+      "question": "A hostname fails to resolve, but connecting to a known service IP succeeds. Which area deserves investigation?",
+      "options": [
+        "DNS configuration",
+        "Monitor brightness",
+        "Printer toner",
+        "Mouse battery"
+      ],
+      "answer": 0,
+      "explanation": "Ping measures ICMP response timing when permitted; packet loss and jitter require broader observation. DNS and application checks add context.",
+      "distinction": "No ping response alone does not prove a host is offline."
+    },
+    {
+      "id": "tf-10-1",
+      "module": 9,
+      "question": "A trainee practices emergency response in a fully simulated environment using a headset. What technology best describes the experience?",
+      "options": [
+        "Virtual reality",
+        "Augmented reality overlay only",
+        "Optical character recognition",
+        "File synchronization"
+      ],
+      "answer": 0,
+      "explanation": "VR immerses users in simulated environments; AR overlays digital content on physical surroundings.",
+      "distinction": "Immersion and overlay are different interaction models."
+    },
+    {
+      "id": "tf-10-2",
+      "module": 9,
+      "question": "A maintenance worker sees digital repair instructions overlaid on a real machine through smart glasses. What technology is being used?",
+      "options": [
+        "Augmented reality",
+        "Offline backup",
+        "Virtual private network",
+        "Binary encoding"
+      ],
+      "answer": 0,
+      "explanation": "AI systems can classify, predict, generate, or recommend; automation executes workflows. Human oversight and validation remain important.",
+      "distinction": "Generated content can be inaccurate even when confidently stated."
+    },
+    {
+      "id": "tf-10-3",
+      "module": 9,
+      "question": "An AI assistant drafts a technical policy summary. What is the most appropriate publication step?",
+      "options": [
+        "Human review against authoritative sources",
+        "Publish immediately because it is fluent",
+        "Remove citations to save space",
+        "Assume every claim is current"
+      ],
+      "answer": 0,
+      "explanation": "Evaluate accessibility, privacy, security, costs, and real-world benefit before adopting technology.",
+      "distinction": "A tool's novelty is not evidence of educational value."
+    },
+    {
+      "id": "tf-10-4",
+      "module": 9,
+      "question": "A service desk wants routine requests to trigger predefined workflows. What capability is central to this goal?",
+      "options": [
+        "Automation",
+        "Display resolution",
+        "Optical media",
+        "Bluetooth pairing"
+      ],
+      "answer": 0,
+      "explanation": "Days 1–5: review systems, devices, data, software, and networking. Days 6–10: review web/cloud, databases, security, troubleshooting, and emerging technology. Days 11–12: complete original practice scenarios and revisit weak areas. Days 13–14: explain concepts from memory and do a light final review.",
+      "distinction": "Use spaced practice and retrieval rather than rereading slides repeatedly."
+    },
+    {
+      "id": "tf-10-5",
+      "module": 9,
+      "question": "A school pilots an AI tutor. Which evidence most directly supports continued adoption?",
+      "options": [
+        "Measured learning gains with privacy and accessibility safeguards",
+        "The tool's novelty alone",
+        "The number of animated icons",
+        "A vendor slogan"
+      ],
+      "answer": 0,
+      "explanation": "Can you explain CPU versus RAM, storage versus backup, router versus switch, Internet versus Web, IaaS versus SaaS, and encryption versus private browsing? Can you diagnose a simple connectivity issue and explain how databases maintain relationships?",
+      "distinction": "Confidence comes from explaining and applying concepts in unfamiliar situations."
+    }
+  ]
+}
