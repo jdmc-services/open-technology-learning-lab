@@ -10,6 +10,10 @@ Open `index.html` in a browser, then choose **Computer Foundations**. All HTML, 
 
 `learning-paths/computer-foundations/index.html` contains four interactive modules: (1) Information & Number Systems, (2) Networking, (3) Software & Applications, (4) Troubleshooting. Each includes original instruction, workplace application, browser-only simulation, scenario, and eight knowledge-check questions with rationales (32 total).
 
+## Learner Portfolio Guide
+* [GitHub Portfolio & Skill-Validation Guide](guides/github-portfolio-guide.md) — Step-by-step instructions on setting up a GitHub repository, documenting labs, and validating technical skills.
+
+
 ## Learner privacy and safety
 
 No analytics, cookies, sign-in, external requests, accounts or server-side data collection. Quiz progress is stored in the learner's browser `localStorage`; learners can clear it from the progress page. Downloaded summaries are self-reported and not tamper-proof. Do not enter real passwords, regulated data, or confidential information. Simulations do not touch real networks or systems.
